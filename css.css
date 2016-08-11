@@ -1,0 +1,116 @@
+body {
+  margin: 0;
+  padding: 0;
+  font: 10px;
+}
+
+h1, h2, p {
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+
+}
+
+.fonts {
+  float: right;
+  color: white;
+  margin: 1% 1%;
+  font-size: .8em;
+  font-family: Arial;
+}
+
+#section-intro {
+  background: url(images/masks.jpeg) no-repeat;
+  background-size: cover;
+  height: 100%;
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+
+  -webkit-box-align: center;
+  -moz-box-align: center;
+  -ms-flex-align: center;
+  -webkit-align-items: center;
+  align-items: center;
+
+  -webkit-box-pack: center;
+  -moz-box-pack: center;
+  -ms-flex-pack: center;
+  -webkit-justify-content: center;
+  justify-content: center;
+}
+
+
+#section-intro p, a{
+  text-align: center;
+  color: black;
+  font-family: 'Cinzel Decorative', cursive;
+  font-weight: 700;
+  font-size: 2em;
+
+}
+
+#section-measure {
+  background: url(images/measure.jpeg) no-repeat;
+  background-size: cover;
+  height: 100%;
+}
+
+#section-midsummer {
+  background: url(images/midsummer.jpeg) no-repeat;
+  background-size: cover;
+  height: 100%;
+  position: relative;
+}
+
+  #section-midsummer .container {
+    position: absolute;
+    margin: 18% 10% ;
+  }
+
+  #section-midsummer h1 {
+    font-family: 'Dancing Script', cursive;
+    font-weight: 400;
+    color: white;
+    font-size: 2.7em;
+  }
+
+  #section-midsummer #midsummer-text {
+    font-family: 'EB Garamond', serif;
+    color: white;
+    font-size: 1.1em;
+    margin-top: 8%;
+  }
+
+#section-tempest {
+  background: url(images/tempest.jpeg) no-repeat;
+  background-size: cover;
+  height: 100%;
+  background-attachment: fixed;
+  position: relative;
+}
+
+  #section-tempest .container {
+    margin: auto;
+    width: 500px;
+    height: 300px;
+    text-align: center;
+    padding-top: 10%;
+}
+
+  #section-tempest .container h1 {
+    color: black;
+    font-size: 5em;
+    font-family: 'Megrim', cursive;
+  }
+
+  #section-tempest .container p {
+    color: black;
+    font-size: 1em;
+    font-family: 'Roboto Slab', serif;
+    margin-top: 3%;
+  }
