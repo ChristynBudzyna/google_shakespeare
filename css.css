@@ -10,14 +10,15 @@ h1, h2, p {
 }
 
 .container {
-  width: 960px; margin: 0 auto;
+
 }
 
-#section-tempest {
-  background: url(images/tempest.jpeg) no-repeat;
-  background-size: cover;
-  height: 100%;
-  background-attachment: fixed;
+.fonts {
+  float: right;
+  color: white;
+  margin: 1% 1%;
+  font-size: .8em;
+  font-family: Arial;
 }
 
 #section-measure {
@@ -36,19 +37,48 @@ h1, h2, p {
 
   #section-midsummer .container {
     position: absolute;
-    margin: 15% 10% ;
+    margin: 18% 10% ;
   }
 
   #section-midsummer h1 {
     font-family: 'Dancing Script', cursive;
-    font-weight: 700;
+    font-weight: 400;
     color: white;
     font-size: 2.7em;
   }
 
-  #section-midsummer p {
+  #section-midsummer #midsummer-text {
     font-family: 'EB Garamond', serif;
     color: white;
     font-size: 1.1em;
     margin-top: 8%;
+  }
+
+#section-tempest {
+  background: url(images/tempest.jpeg) no-repeat;
+  background-size: cover;
+  height: 100%;
+  background-attachment: fixed;
+  position: relative;
+}
+
+  #section-tempest .container {
+    margin: auto;
+    width: 500px;
+    height: 300px;
+    text-align: center;
+    padding-top: 10%;
+}
+
+  #section-tempest .container h1 {
+    color: black;
+    font-size: 5em;
+    font-family: 'Megrim', cursive;
+  }
+
+  #section-tempest .container p {
+    color: black;
+    font-size: 1em;
+    font-family: 'Roboto Slab', serif;
+    margin-top: 3%;
   }
