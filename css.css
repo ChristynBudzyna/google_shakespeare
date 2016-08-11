@@ -1,3 +1,5 @@
+/* general styling */
+
 body {
   margin: 0;
   padding: 0;
@@ -7,10 +9,10 @@ body {
 h1, h2, p {
   margin: 0;
   padding: 0;
+  display: block;
 }
 
 .container {
-
 }
 
 .fonts {
@@ -21,44 +23,46 @@ h1, h2, p {
   font-family: Arial;
 }
 
+hr {
+  border: 1px solid white;
+  width: 20%;
+  color: white;
+  background-color: white;
+}
+
+/* intro styling */
+
 #section-intro {
   background: url(images/masks.jpeg) no-repeat;
   background-size: cover;
   height: 100%;
-  display: -webkit-box;
-  display: -moz-box;
-  display: -ms-flexbox;
-  display: -webkit-flex;
   display: flex;
-
-  -webkit-box-align: center;
-  -moz-box-align: center;
-  -ms-flex-align: center;
-  -webkit-align-items: center;
   align-items: center;
-
-  -webkit-box-pack: center;
-  -moz-box-pack: center;
-  -ms-flex-pack: center;
-  -webkit-justify-content: center;
   justify-content: center;
 }
+    #section-intro .container {
+      background: rgba(255, 255, 255, 0.6);
+      padding: 0 1.3% 1.3% 1.3%;
+    }
 
+    #section-intro p, a, h1, h2{
+      text-align: center;
+      color: black;
+    }
 
-#section-intro p, a{
-  text-align: center;
-  color: black;
-  font-family: 'Cinzel Decorative', cursive;
-  font-weight: 700;
-  font-size: 2em;
+    #section-intro h2, a {
+      font-size: 30px;
+      text-decoration: none;
+      font-family: 'Playfair Display', serif;
+    }
 
-}
+    #section-intro h1 {
+      font-size: 5em;
+      font-weight: 700;
+      font-family: 'Playfair Display', serif;
+    }
 
-#section-measure {
-  background: url(images/measure.jpeg) no-repeat;
-  background-size: cover;
-  height: 100%;
-}
+/* midsummer styling */
 
 #section-midsummer {
   background: url(images/midsummer.jpeg) no-repeat;
@@ -66,25 +70,26 @@ h1, h2, p {
   height: 100%;
   position: relative;
 }
+    #section-midsummer .container {
+      position: absolute;
+      margin: 18% 10% ;
+    }
 
-  #section-midsummer .container {
-    position: absolute;
-    margin: 18% 10% ;
-  }
+    #section-midsummer h1 {
+      font-family: 'Dancing Script', cursive;
+      font-weight: 400;
+      color: white;
+      font-size: 2.7em;
+    }
 
-  #section-midsummer h1 {
-    font-family: 'Dancing Script', cursive;
-    font-weight: 400;
-    color: white;
-    font-size: 2.7em;
-  }
+    #section-midsummer #midsummer-text {
+      font-family: 'EB Garamond', serif;
+      color: white;
+      font-size: 1.1em;
+      margin-top: 8%;
+    }
 
-  #section-midsummer #midsummer-text {
-    font-family: 'EB Garamond', serif;
-    color: white;
-    font-size: 1.1em;
-    margin-top: 8%;
-  }
+/* tempest styling */
 
 #section-tempest {
   background: url(images/tempest.jpeg) no-repeat;
@@ -93,24 +98,80 @@ h1, h2, p {
   background-attachment: fixed;
   position: relative;
 }
+    #section-tempest .container {
+      margin: auto;
+      width: 500px;
+      height: 300px;
+      text-align: center;
+      padding-top: 10%;
+    }
 
-  #section-tempest .container {
-    margin: auto;
-    width: 500px;
-    height: 300px;
-    text-align: center;
-    padding-top: 10%;
+    #section-tempest .container h1 {
+      color: black;
+      font-size: 5em;
+      font-family: 'Megrim', cursive;
+    }
+
+    #section-tempest .container p {
+      color: black;
+      font-size: 1em;
+      font-family: 'Roboto Slab', serif;
+      margin-top: 3%;
+    }
+
+/* measure styling */
+
+#section-measure {
+  background: url(images/measure.jpeg) no-repeat;
+  background-size: cover;
+  height: 100%;
+  position: relative;
 }
 
-  #section-tempest .container h1 {
-    color: black;
-    font-size: 5em;
-    font-family: 'Megrim', cursive;
+  #section-measure .container {
+    position: absolute;
+    margin-left: 63%;
+    margin-top: 10%;
+    background: rgba(255, 255, 255, 0.5);
+    padding: .3% 1.5% 1.5% 1.5%;
   }
 
-  #section-tempest .container p {
-    color: black;
+  #section-measure h1{
+    font-family: 'Medula One', cursive;
+    font-weight: 100;
+    font-size: 4.5em;
+    text-align: left;
+    color: #690714;
+  }
+
+   #section-measure #measure-text{
+    font-family: 'Abel', sans-serif;
+    font-size: 1.2em;
+  }
+
+/* macbeth styling */
+
+#section-caesar {
+  background: url(images/ocean.jpeg) no-repeat;
+  background-size: cover;
+  height: 100%;
+  background-attachment: fixed;
+  position: relative;
+}
+
+  #section-caesar h1 {
+    font-family: 'Oswald';
+    font-size: 5em;
+    font-weight: 100;
+    color: white;
+    text-align: center;
+  }
+
+  #section-caesar p {
+    font-family: 'Roboto Condensed', sans-serif;
     font-size: 1em;
-    font-family: 'Roboto Slab', serif;
-    margin-top: 3%;
+    font-weight: 300;
+    color: white;
+    text-align: center;
+    padding: 1.5%;
   }
